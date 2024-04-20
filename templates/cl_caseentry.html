@@ -1,0 +1,447 @@
+
+{% include 'client_header.html' %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item" style="background-image: url(/static/assets/img/slide/slide-1.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">SMART ADVOCATE<span></span></h2>
+              <p class="animate__animated animate__fadeInUp">
+                Smart Advocate is a cutting-edge platform dedicated to empowering advocates and driving positive change. Through innovative technology and a client-centric approach, we provide a comprehensive suite of services tailored to meet the diverse needs of our clients.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item active" style="background-image: url(/static/assets/img/slide/young-happy-couple-meeting-with-financial-advisor-office-woman-is-handshaking-with-agent.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Advocacy Elevated: Welcome to Smart Advocate.</h2>
+              <p class="animate__animated animate__fadeInUp">At Smart Advocate, we believe in the power of advocacy to effect meaningful change in society. Whether you're a nonprofit organization, a community group, or a business looking to make a difference, we're here to support you every step of the way.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(/static/assets/img/slide/top-view-businessmen-shaking-hands-business-negotiation-startup-office.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Empowering voices, driving change.</h2>
+              <p class="animate__animated animate__fadeInUp">Welcome to Smart Advocate. Together, we can create a brighter future for all.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+  <br><br><br><br>
+<body>
+    <!-- <form method="post">
+        <table>
+            <tr>
+                <th>Type</th>
+                <td><select name="Type" id="">
+                    {% for i in data['casetypee']%}
+    
+                    <option value="{{i['type_id']}}">{{i['type_name']}}</option>
+                    {%endfor%}
+                </select></td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th><input type="text" name="title"></th>
+            </tr>
+            <tr>
+                <th>Descriptionn</th>
+                <th><input type="text" name="Des"></th>
+            </tr>
+            <tr>
+                <th>Case Date</th>
+                <th><input type="date" name="case_date"></th>
+            </tr>
+            <tr>
+                <th>Police Station</th>
+                <th><input type="text" name="police_station"></th>
+            </tr>
+            <tr>
+                <th>Case Fee Amount</th>
+                <th><input type="text" name="case_fee_amount"></th>
+            </tr>
+            <tr>
+                <th>Pincode</th>
+                <th><input type="number" name="pincode"></th>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <th><input type="text" name="phone"></th>
+            </tr>
+            <tr>
+                <th>Client</th>
+                <td><select name="client" id="">
+                    {% for i in data['cliente']%}
+    
+                    <option value="{{i['client_id']}}">{{i['first_name']}}</option>
+                    {%endfor%}
+                </select></td>
+            </tr>
+         
+            <tr>
+                <th><input type="submit" name="submit"></th>
+            </tr>
+        </table>
+    </form> -->
+    <center>
+
+    <html lang="tr">
+
+    <head>
+    
+    
+        <!-- <style>
+            body {
+              background-image: url("https://img.freepik.com/free-photo/closeup-candidate-signing-application-form_1262-16052.jpg?t=st=1708585319~exp=1708588919~hmac=e171519c6bfadad8708ff2b4f4d2c58396509ca5b188d2f59c343f0f481ed9c5&w=1060");
+              background-size: cover;
+              background-repeat: no-repeat;
+            }
+          </style> -->
+    
+        <!-- Standard Meta -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    
+        <!-- Site Properties -->
+        <title>Bootstrap 4 Register Form</title>
+    
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <form class="form-horizontal" role="form" method="POST" action="">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <h2>Case Entry</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 field-label-responsive">
+                        <label for="email">Types</label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <!-- <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-user"></i>
+                                </div> -->
+                                <select name="Type" class="form-control" id="surname" required autofocus>
+                                    {% for i in data['casetypee']%}
+                                    <option value="{{i['type_id']}}">{{i['type_name']}}</option>
+                                    {%endfor%}
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 field-label-responsive">
+                        <label for="email">Title</label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <!-- <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-user"></i>
+                                </div> -->
+                                <input type="text" name="title" class="form-control" id="surname" placeholder="title" required autofocus>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 field-label-responsive">
+                        <label for="email">Description</label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <!-- <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-user"></i>
+                                </div> -->
+                                <input type="text" name="Des" class="form-control" id="surname" placeholder="description" required autofocus>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 field-label-responsive">
+                        <label for="email">Case Date</label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <!-- <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-user"></i>
+                                </div> -->
+                                <input type="date" name="case_date" class="form-control" id="surname" required autofocus>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 field-label-responsive">
+                        <label for="email">Police Station</label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <!-- <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-user"></i>
+                                </div> -->
+                                <input type="text" name="police_station" class="form-control" id="surname" placeholder="police station" required autofocus>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 field-label-responsive">
+                        <label for="email">Case Fee Amount</label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <!-- <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-user"></i>
+                                </div> -->
+                                <input type="text" name="case_fee_amount" class="form-control" id="surname" placeholder="amount" required autofocus>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 field-label-responsive">
+                        <label for="email">Pincode</label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <!-- <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-user"></i>
+                                </div> -->
+                                <input type="number" name="pincode" class="form-control" id="surname" placeholder="pincode" required autofocus>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 field-label-responsive">
+                        <label for="email">Phone</label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <!-- <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-user"></i>
+                                </div> -->
+                                <input type="number" name="phone" class="form-control" id="surname" placeholder="number" required autofocus>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <button type="submit" id="button" name="submit" class="btn btn-success">
+                            <i class="fa fa-user-plus"></i>Submit</button>
+                    </div>
+    
+                </div>
+            </form>
+        </div>
+    </body>
+    
+    <!-- <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Surname</th>
+                <th scope="col">Email</th>
+                <th scope="col">Username</th>
+                <th scope="col">Register Date</th>
+                <th scope="col">Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+    
+        </tbody>
+    </table> -->
+    
+    <script src="script.js"></script>
+    
+    </html>
+    
+    <script>
+    
+    var userList = [];
+    
+    var config = {
+        date: {
+            day: "2-digit",
+            year: "numeric",
+            month: "long",
+            hour: "numeric",
+            minute: "2-digit"
+        }
+    }
+    
+    var generateGUID = () => {
+        var s4 = () => {
+            return Math.floor((1 + Math.random()) * 0x10000)
+                .toString(16)
+                .substring(1);
+        }
+        return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+    }
+    
+    var generateRow = user => `<tr>
+            <td>
+            ${user.name}
+            </td>
+            <td>
+            ${user.surname}
+            </td>
+            <td>
+            ${user.email}
+            </td>
+            <td>
+            ${user.username}
+            </td>
+            <td>
+            ${user.createDate.toLocaleDateString("tr", config.date)}
+            </td>
+            <td>
+                <button data-user="${user.id}" class="del">Del</button>
+                <button data-user="${user.id}" class="edit">Edit</button>
+            </td>
+        </tr>`;
+    
+    
+    
+    $("#button").click(() => {
+        let user = {
+            name: $('#name').val(),
+            surname: $('#surname').val(),
+            email: $('#email').val(),
+            username: $('#username').val(),
+            createDate: new Date(),
+            id: generateGUID()
+        };
+    
+        userList.push(user);
+    
+        let row = $(generateRow(user));
+    
+        $(row).find(".del").click(function () {
+            if (window.confirm("Do you really want to delete?")) {
+                $(row).remove();
+            }
+        });
+    
+        $(row).find(".edit").click(function () {
+            $("#edit").show();
+            $("#button").hide();
+        });
+    
+    
+    
+        $('tbody').append(row);
+    
+    });
+    
+    
+    
+    
+    </script>
+    </center>
+    <br><br><br><br>
+
+
+    
+<center>
+    <table border="2" class="table table-bordered" style="width: 1200px;">
+        <thead class="table-info">
+        <tr>
+            <th>slno</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Case Date</th>
+            <th>Police Station</th>
+            <th>Case Fee Amount</th>
+            <th>Pincode</th>
+            <th>Phone</th>
+        </thead>
+        </tr>
+        {% for i in data['casee'] %}
+        <tr>
+            <td>{{loop.index}}</td>
+            <td>{{i['Title']}}</td>
+            <td>{{i['Description']}}</td>
+            <td>{{i['case_date']}}</td>
+            <td>{{i['police_station']}}</td>
+            <td>{{i['case_fee_amount']}}</td>
+            <td>{{i['Pincode']}}</td>
+            <td>{{i['Phone']}}</td>
+        </tr>
+        {%endfor%}
+    
+    </table>
+    </body>
+    </html>
+
+    <br><br><br>
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+    class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="/static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="/static/assets/vendor/aos/aos.js"></script>
+<script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="/static/assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="/static/assets/js/main.js"></script>
+
+
+{% include 'footer.html' %}
